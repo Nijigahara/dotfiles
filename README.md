@@ -13,12 +13,20 @@ Personal Linux workstation dotfiles managed with `chezmoi`, protected with GPG-e
 
 This setup leans into a coordinated desktop and terminal look instead of treating each tool as an island.
 
-- warm, theme-driven terminal and editor palette
-- tiling desktop configuration for both `Hyprland` and `Niri`
-- shared visual language across `Ghostty`, `Zellij`, `Zed`, `Neovim`, and GTK apps
-- custom `matugen` scripts to propagate theme changes across the stack
+[![Styled terminal tour of the dotfiles repo](assets/demo/repo-tour.png)](assets/demo/repo-tour.webm)
 
-If I add screenshots later, they should live here as a compact gallery rather than being scattered through the repo.
+The hero demo uses the real `dankcolors` palette from this repo and walks through the structure, encrypted state, automation, and a brief Neovim theme reveal.
+
+- [Watch the hero repo tour](assets/demo/repo-tour.webm)
+- [Watch the bootstrap demo](assets/demo/bootstrap.webm)
+- [See how the media is generated](docs/media.md)
+
+### Terminal Demos
+
+| Demo | Focus |
+| --- | --- |
+| [`repo-tour.webm`](assets/demo/repo-tour.webm) | showcase-style tour of the repo, secrets, automation, and Neovim theme files |
+| [`bootstrap.webm`](assets/demo/bootstrap.webm) | compact restore-oriented demo for `chezmoi` initialization and status flow |
 
 ## Highlights
 
