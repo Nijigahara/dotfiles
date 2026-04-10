@@ -45,6 +45,8 @@ proc wait_prompt {} {
 }
 
 catch {exec tmux kill-session -t hero-demo}
+catch {exec zellij kill-session hero-zellij}
+exec zellij attach hero-zellij -b
 
 spawn bash -i
 fconfigure $spawn_id -encoding utf-8
@@ -59,12 +61,10 @@ wait_prompt
 run_cmd "cd ~/.local/share/chezmoi"
 wait_prompt
 
-run_cmd "zellij"
-after 1600
-send -- "\003"
-after 700
+run_cmd "zellij attach hero-zellij"
+after 1800
 send -- "\en"
-after 1500
+after 1700
 send -- "\021"
 wait_prompt
 
