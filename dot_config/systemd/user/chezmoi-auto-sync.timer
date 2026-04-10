@@ -1,0 +1,11 @@
+[Unit]
+Description=Run chezmoi auto sync daily
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+RandomizedDelaySec=30m
+Unit=chezmoi-auto-sync.service
+
+[Install]
+WantedBy=timers.target
