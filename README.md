@@ -13,20 +13,24 @@ Personal Linux workstation dotfiles managed with `chezmoi`, protected with GPG-e
 
 This setup leans into a coordinated desktop and terminal look instead of treating each tool as an island.
 
-[![Styled terminal tour of the dotfiles repo](assets/demo/repo-tour.png)](assets/demo/repo-tour.webm)
+[![Styled terminal tour of the dotfiles repo](assets/demo/repo-tour.gif)](assets/demo/repo-tour.gif)
 
 The hero demo uses the real `dankcolors` palette from this repo and walks through the structure, encrypted state, automation, and a brief Neovim theme reveal.
 
-- [Watch the hero repo tour](assets/demo/repo-tour.webm)
-- [Watch the bootstrap demo](assets/demo/bootstrap.webm)
+- [Watch the hero repo tour GIF](assets/demo/repo-tour.gif)
+- [Watch the bootstrap demo GIF](assets/demo/bootstrap.gif)
+- [Download the hero video](assets/demo/repo-tour.webm)
+- [Download the bootstrap video](assets/demo/bootstrap.webm)
 - [See how the media is generated](docs/media.md)
 
 ### Terminal Demos
 
 | Demo | Focus |
 | --- | --- |
-| [`repo-tour.webm`](assets/demo/repo-tour.webm) | showcase-style tour of the repo, secrets, automation, and Neovim theme files |
-| [`bootstrap.webm`](assets/demo/bootstrap.webm) | compact restore-oriented demo for `chezmoi` initialization and status flow |
+| [`repo-tour.gif`](assets/demo/repo-tour.gif) | GitHub-friendly showcase tour of the repo, secrets, automation, and Neovim theme files |
+| [`bootstrap.gif`](assets/demo/bootstrap.gif) | GitHub-friendly compact restore demo for `chezmoi` initialization and status flow |
+| [`repo-tour.webm`](assets/demo/repo-tour.webm) | smaller downloadable version of the hero demo |
+| [`bootstrap.webm`](assets/demo/bootstrap.webm) | smaller downloadable version of the bootstrap demo |
 
 ## Highlights
 

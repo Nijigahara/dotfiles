@@ -20,8 +20,10 @@ sudo pacman -S vhs ffmpeg ttyd
 | --- | --- |
 | `assets/vhs/repo-tour.tape` | main showcase recording |
 | `assets/vhs/bootstrap.tape` | quick restore-oriented supporting demo |
+| `assets/demo/repo-tour.gif` | GitHub-friendly inline hero animation |
 | `assets/demo/repo-tour.webm` | rendered hero video |
 | `assets/demo/repo-tour.png` | screenshot captured from the hero tape |
+| `assets/demo/bootstrap.gif` | GitHub-friendly inline supporting animation |
 | `assets/demo/bootstrap.webm` | supporting demo video |
 
 ## Render The Assets
@@ -31,6 +33,11 @@ From the repo root:
 ```bash
 vhs assets/vhs/repo-tour.tape
 vhs assets/vhs/bootstrap.tape
+ffmpeg -y -i assets/demo/repo-tour.webm -vf "fps=15,scale=1200:-1:flags=lanczos,palettegen" assets/demo/repo-tour-palette.png
+ffmpeg -y -i assets/demo/repo-tour.webm -i assets/demo/repo-tour-palette.png -lavfi "fps=15,scale=1200:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=3" assets/demo/repo-tour.gif
+ffmpeg -y -i assets/demo/bootstrap.webm -vf "fps=15,scale=1200:-1:flags=lanczos,palettegen" assets/demo/bootstrap-palette.png
+ffmpeg -y -i assets/demo/bootstrap.webm -i assets/demo/bootstrap-palette.png -lavfi "fps=15,scale=1200:-1:flags=lanczos[x];[x][1:v]paletteuse=dither=bayer:bayer_scale=3" assets/demo/bootstrap.gif
+rm assets/demo/repo-tour-palette.png assets/demo/bootstrap-palette.png
 ```
 
 ## Recording Principles
@@ -44,6 +51,6 @@ vhs assets/vhs/bootstrap.tape
 
 The root `README.md` is designed to use:
 
-- `assets/demo/repo-tour.png` as the inline preview image
-- `assets/demo/repo-tour.webm` as the linked hero recording
-- `assets/demo/bootstrap.webm` as a supporting terminal demo
+- `assets/demo/repo-tour.gif` as the inline hero animation on GitHub
+- `assets/demo/bootstrap.gif` as the inline supporting animation on GitHub
+- `assets/demo/*.webm` as smaller downloadable versions
