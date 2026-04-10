@@ -1,0 +1,10 @@
+schema_version = "1.0.0"
+id = "NieR_Automata"
+name = "YorHa - Operator"
+version = "1.1.0"
+tagline = "A Dark Version Of Nier Automata Ui inspired by YorHa-Operator"
+maintainer = "Mamane Kabiru <kabir3dtech@gmail.com>"
+type = "theme"
+tags = ["Dark"]
+blender_version_min = "5.0.0"
+license = ["SPDX:GPL-2.0-or-later"]

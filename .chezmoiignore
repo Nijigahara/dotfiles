@@ -1,0 +1,92 @@
+{{- $home := .chezmoi.homeDir }}
+{{ $home }}/.bash_history
+{{ $home }}/.bash_history-*
+{{ $home }}/.cache/**
+{{ $home }}/.npm/**
+{{ $home }}/.pki/**
+{{ $home }}/.zen/**
+{{ $home }}/.config/chezmoi/chezmoistate.boltdb
+{{ $home }}/.config/google-chrome/**
+{{ $home }}/.config/Code/Backups/**
+{{ $home }}/.config/Code/blob_storage/**
+{{ $home }}/.config/Code/Cache/**
+{{ $home }}/.config/Code/CachedConfigurations/**
+{{ $home }}/.config/Code/CachedData/**
+{{ $home }}/.config/Code/CachedExtensionVSIXs/**
+{{ $home }}/.config/Code/CachedProfilesData/**
+{{ $home }}/.config/Code/Code Cache/**
+{{ $home }}/.config/Code/Cookies*
+{{ $home }}/.config/Code/Crashpad/**
+{{ $home }}/.config/Code/DawnGraphiteCache/**
+{{ $home }}/.config/Code/DawnWebGPUCache/**
+{{ $home }}/.config/Code/Dictionaries/**
+{{ $home }}/.config/Code/DIPS
+{{ $home }}/.config/Code/GPUCache/**
+{{ $home }}/.config/Code/Local Storage/**
+{{ $home }}/.config/Code/logs/**
+{{ $home }}/.config/Code/machineid
+{{ $home }}/.config/Code/Network Persistent State
+{{ $home }}/.config/Code/Service Worker/**
+{{ $home }}/.config/Code/Session Storage/**
+{{ $home }}/.config/Code/Shared Dictionary/**
+{{ $home }}/.config/Code/shared_proto_db/**
+{{ $home }}/.config/Code/SharedStorage/**
+{{ $home }}/.config/Code/TransportSecurity
+{{ $home }}/.config/Code/Trust Tokens*
+{{ $home }}/.config/Code/User/globalStorage/**
+{{ $home }}/.config/Code/User/History/**
+{{ $home }}/.config/Code/User/workspaceStorage/**
+{{ $home }}/.config/Code/VideoDecodeStats/**
+{{ $home }}/.config/Code/WebStorage/**
+{{ $home }}/.config/Cursor/Backups/**
+{{ $home }}/.config/Cursor/blob_storage/**
+{{ $home }}/.config/Cursor/Cache/**
+{{ $home }}/.config/Cursor/CachedData/**
+{{ $home }}/.config/Cursor/CachedExtensionVSIXs/**
+{{ $home }}/.config/Cursor/CachedProfilesData/**
+{{ $home }}/.config/Cursor/Code Cache/**
+{{ $home }}/.config/Cursor/Cookies*
+{{ $home }}/.config/Cursor/Crashpad/**
+{{ $home }}/.config/Cursor/DawnGraphiteCache/**
+{{ $home }}/.config/Cursor/DawnWebGPUCache/**
+{{ $home }}/.config/Cursor/Dictionaries/**
+{{ $home }}/.config/Cursor/DIPS
+{{ $home }}/.config/Cursor/GPUCache/**
+{{ $home }}/.config/Cursor/Local Storage/**
+{{ $home }}/.config/Cursor/logs/**
+{{ $home }}/.config/Cursor/machineid
+{{ $home }}/.config/Cursor/Network Persistent State
+{{ $home }}/.config/Cursor/process-monitor/**
+{{ $home }}/.config/Cursor/sentry/**
+{{ $home }}/.config/Cursor/Session Storage/**
+{{ $home }}/.config/Cursor/Shared Dictionary/**
+{{ $home }}/.config/Cursor/SharedStorage/**
+{{ $home }}/.config/Cursor/Trust Tokens*
+{{ $home }}/.config/Cursor/User/globalStorage/**
+{{ $home }}/.config/Cursor/User/History/**
+{{ $home }}/.config/Cursor/User/workspaceStorage/**
+{{ $home }}/.config/DankMaterialShell/.changelog-*
+{{ $home }}/.config/DankMaterialShell/.firstlaunch
+{{ $home }}/.config/DankMaterialShell/plugins/**/.git/**
+{{ $home }}/.config/DankMaterialShell/plugins/**/*.png
+{{ $home }}/.config/DankMaterialShell/plugins/**/*.meta
+{{ $home }}/.config/blender-shared/cache/**
+{{ $home }}/.config/blender-shared/scripts/startup/__pycache__/**
+{{ $home }}/.config/blender/*/extensions/.cache/**
+{{ $home }}/.config/blender/*/extensions/blender_org/.blender_ext/**
+{{ $home }}/.config/nushell/history.txt
+{{ $home }}/.config/obs-studio/logs/**
+{{ $home }}/.config/obs-studio/profiler_data/**
+{{ $home }}/.config/obs-studio/.sentinel/**
+{{ $home }}/.config/obs-studio/plugin_manager/**
+{{ $home }}/.config/obs-studio/plugin_config/**
+{{ $home }}/.config/qBittorrent/rss/**
+{{ $home }}/.config/qBittorrent/watched_folders.json
+{{ $home }}/.config/Vencord/**
+{{ $home }}/.config/mpv/**
+{{ $home }}/.config/quickshell/**
+{{ $home }}/.config/nautilus/**
+{{ $home }}/**/.DS_Store
+{{ $home }}/**/*.bak
+{{ $home }}/**/*.backup.*
+{{- end }}

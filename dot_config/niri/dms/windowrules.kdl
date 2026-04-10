@@ -1,0 +1,74 @@
+// DMS Window Rules - Managed by DankMaterialShell
+// Do not edit manually - changes may be overwritten
+
+// @id=wr_1771892330543197662 @name=zen
+window-rule {
+    match app-id="^zen$"
+    open-maximized true
+}
+
+// @id=wr_1771892530955729180 @name=dev.zed.Zed
+window-rule {
+    match app-id="^dev.zed.Zed$"
+    open-maximized true
+}
+
+// @id=wr_1772030234663418436 @name=Godot
+window-rule {
+    match app-id="^Godot$"
+    open-maximized true
+}
+
+// @id=wr_1772646671438241090 @name=zen
+window-rule {
+    match app-id="^zen$" title="^Library$"
+    open-floating true
+}
+
+// @id=wr_1772913313270666278 @name=zen
+window-rule {
+    match app-id="^zen$" title="^Zen - Choose User Profile$"
+    open-floating true
+}
+
+// @id=wr_1773077414677438995 @name=org.kde.kdenlive
+window-rule {
+    match app-id="^org.kde.kdenlive$"
+    open-maximized true
+}
+
+// @id=wr_1773077545268014276 @name=org.kde.kdenlive
+window-rule {
+    match app-id="^org.kde.kdenlive$" title="^Splash Screen — Kdenlive$"
+    open-floating true
+}
+
+// @id=wr_1773088149902779422 @name=discord
+window-rule {
+    match app-id="^discord$"
+    open-maximized true
+}
+
+// @id=wr_1773329720609571745 @name=dev.eden_emu.eden
+window-rule {
+    match app-id="^dev.eden_emu.eden$"
+    open-maximized true
+}
+
+// @id=wr_1774481958870704055 @name=cursor
+window-rule {
+    match app-id="^cursor$"
+    open-maximized true
+}
+
+// @id=wr_1774517611725872325 @name=google-chrome
+window-rule {
+    match app-id="^google-chrome$"
+    open-maximized true
+}
+
+// @id=wr_1775277180415253203 @name=com.obsproject.Studio
+window-rule {
+    match app-id="^com.obsproject.Studio$"
+    open-maximized true
+}
