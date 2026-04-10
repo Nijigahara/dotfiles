@@ -1,0 +1,88 @@
+#!/usr/bin/expect -f
+
+set timeout 30
+set send_slow {1 0.035}
+
+set demo_repo "/tmp/hero-lazygit"
+
+catch {exec rm -rf $demo_repo}
+exec mkdir -p $demo_repo
+exec git -C $demo_repo init -q
+exec git -C $demo_repo config user.name "Nijigahara"
+exec git -C $demo_repo config user.email "55877150+Nijigahara@users.noreply.github.com"
+
+set fh [open "$demo_repo/README.md" w]
+puts $fh "# Hero Demo"
+puts $fh ""
+puts $fh "Temporary repo for showcasing lazygit in the asciinema capture."
+close $fh
+
+exec git -C $demo_repo add README.md
+exec git -C $demo_repo commit -q -m "Initial commit"
+
+set fh [open "$demo_repo/README.md" a]
+puts $fh ""
+puts $fh "- theme-aware terminal workflow"
+puts $fh "- lazygit, zellij, tmux, and nvim"
+close $fh
+
+proc type_cmd {text} {
+  send -s -- $text
+}
+
+proc run_cmd {text} {
+  after 220
+  type_cmd $text
+  send -- "\r"
+}
+
+proc wait_prompt {} {
+  expect {
+    -re {\x1b\[35m.\x1b\[0m } { return }
+    timeout { exit 1 }
+    eof { exit 1 }
+  }
+}
+
+catch {exec tmux kill-session -t hero-demo}
+
+spawn bash -i
+fconfigure $spawn_id -encoding utf-8
+
+wait_prompt
+
+run_cmd "cd $demo_repo && lazygit"
+after 2300
+send -- "q"
+wait_prompt
+
+run_cmd "cd ~/.local/share/chezmoi"
+wait_prompt
+
+run_cmd "zellij"
+after 1600
+send -- "\003"
+after 700
+send -- "\en"
+after 1500
+send -- "\021"
+wait_prompt
+
+run_cmd "tmux new-session -A -s hero-demo"
+after 2200
+send -- "\002\""
+after 1400
+send -- "\002d"
+wait_prompt
+
+run_cmd "nvim ~/.config/nvim/init.lua"
+after 1800
+send -- ":e ~/.config/nvim/lua/themes/dankcolors.lua\r"
+after 1900
+send -- ":qall!\r"
+wait_prompt
+
+run_cmd "clear"
+after 900
+send -- "exit\r"
+expect eof

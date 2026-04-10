@@ -13,24 +13,20 @@ Personal Linux workstation dotfiles managed with `chezmoi`, protected with GPG-e
 
 This setup leans into a coordinated desktop and terminal look instead of treating each tool as an island.
 
-[![Styled terminal tour of the dotfiles repo](assets/demo/repo-tour.gif)](assets/demo/repo-tour.gif)
+[![Styled terminal tour of the actual shell and CLI setup](assets/demo/hero.gif)](assets/demo/hero.gif)
 
-The hero demo uses the real `dankcolors` palette from this repo and walks through the structure, encrypted state, automation, and a brief Neovim theme reveal.
+The hero demo now records the actual daily-driver toolchain instead of a staged repo tour: `fastfetch`, the real `starship` prompt, `lazygit`, `zellij`, `tmux`, and `nvim`, all rendered with the `dankcolors` palette.
 
-- [Watch the hero repo tour GIF](assets/demo/repo-tour.gif)
-- [Watch the bootstrap demo GIF](assets/demo/bootstrap.gif)
-- [Download the hero video](assets/demo/repo-tour.webm)
-- [Download the bootstrap video](assets/demo/bootstrap.webm)
+- [Watch the hero GIF](assets/demo/hero.gif)
+- [Download the asciinema cast](assets/asciinema/hero.cast)
 - [See how the media is generated](docs/media.md)
 
 ### Terminal Demos
 
 | Demo | Focus |
 | --- | --- |
-| [`repo-tour.gif`](assets/demo/repo-tour.gif) | GitHub-friendly showcase tour of the repo, secrets, automation, and Neovim theme files |
-| [`bootstrap.gif`](assets/demo/bootstrap.gif) | GitHub-friendly compact restore demo for `chezmoi` initialization and status flow |
-| [`repo-tour.webm`](assets/demo/repo-tour.webm) | smaller downloadable version of the hero demo |
-| [`bootstrap.webm`](assets/demo/bootstrap.webm) | smaller downloadable version of the bootstrap demo |
+| [`hero.gif`](assets/demo/hero.gif) | GitHub-friendly cast of the real shell, `lazygit`, `zellij`, `tmux`, and `nvim` flow |
+| [`hero.cast`](assets/asciinema/hero.cast) | raw `asciinema` recording for higher-fidelity playback or re-rendering |
 
 ## Highlights
 
