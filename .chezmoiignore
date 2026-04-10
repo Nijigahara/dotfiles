@@ -89,4 +89,3 @@
 {{ $home }}/**/.DS_Store
 {{ $home }}/**/*.bak
 {{ $home }}/**/*.backup.*
-{{- end }}
