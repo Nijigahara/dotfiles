@@ -427,7 +427,7 @@
   },
   "niriOutputSettings": {
     "ASUSTek COMPUTER INC ASUS VA229 0x00002CEA": {
-      "disabled": true
+      "disabled": false
     },
     "LG Electronics LG FULL HD 009NTYT6M410": {
       "focusAtStartup": true,
