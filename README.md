@@ -13,20 +13,17 @@ Personal Linux workstation dotfiles managed with `chezmoi`, protected with GPG-e
 
 This setup leans into a coordinated desktop and terminal look instead of treating each tool as an island.
 
-[![Styled terminal tour of the actual shell and CLI setup](assets/demo/hero.gif)](assets/demo/hero.gif)
+[![Styled terminal tour of the actual shell and CLI setup](assets/demo/showcase.gif)](assets/demo/showcase.gif)
 
-The hero demo now records the actual daily-driver toolchain instead of a staged repo tour: `fastfetch`, the real `starship` prompt, `lazygit`, `zellij`, `tmux`, and `nvim`, all rendered with the `dankcolors` palette.
+This showcase is a manual capture of the actual daily-driver workspace, including the real prompt, terminal layout, and editor setup.
 
-- [Watch the hero GIF](assets/demo/hero.gif)
-- [Download the asciinema cast](assets/asciinema/hero.cast)
-- [See how the media is generated](docs/media.md)
+- [Watch the showcase GIF](assets/demo/showcase.gif)
 
 ### Terminal Demos
 
 | Demo | Focus |
 | --- | --- |
-| [`hero.gif`](assets/demo/hero.gif) | GitHub-friendly cast of the real shell, `lazygit`, `zellij`, `tmux`, and `nvim` flow |
-| [`hero.cast`](assets/asciinema/hero.cast) | raw `asciinema` recording for higher-fidelity playback or re-rendering |
+| [`showcase.gif`](assets/demo/showcase.gif) | Manual screencap of the real shell, terminal workflow, and editor setup |
 
 ## Highlights
 
