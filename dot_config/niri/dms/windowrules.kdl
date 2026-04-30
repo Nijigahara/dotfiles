@@ -72,9 +72,3 @@ window-rule {
     match app-id="^com.obsproject.Studio$"
     open-maximized true
 }
-
-// @id=wr_1775951417944873120 @name=com.mitchellh.ghostty
-window-rule {
-    match app-id="^com.mitchellh.ghostty$"
-    open-maximized true
-}
