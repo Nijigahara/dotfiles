@@ -7,7 +7,7 @@
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "DP-2",
   "popupTransparency": 1,
-  "dockTransparency": 0.5,
+  "dockTransparency": 0.8,
   "widgetBackgroundColor": "sch",
   "widgetColorMode": "default",
   "controlCenterTileColorMode": "primary",
@@ -328,12 +328,12 @@
   "matugenTemplateZed": true,
   "showDock": true,
   "dockAutoHide": false,
-  "dockSmartAutoHide": true,
+  "dockSmartAutoHide": false,
   "dockGroupByApp": true,
   "dockOpenOnOverview": true,
   "dockPosition": 1,
   "dockSpacing": 8,
-  "dockBottomGap": 0,
+  "dockBottomGap": -16,
   "dockMargin": 4,
   "dockIconSize": 40,
   "dockIndicatorStyle": "circle",
@@ -731,44 +731,44 @@
       ],
       "showOnLastDisplay": false,
       "leftWidgets": [
-        "launcherButton",
+        {
+          "id": "launcherButton",
+          "enabled": true
+        },
         {
           "id": "focusedWindow",
           "enabled": true,
           "focusedWindowCompactMode": true
-        },
-        {
-          "id": "runningApps",
-          "enabled": true,
-          "runningAppsCompactMode": false,
-          "runningAppsGroupByApp": true,
-          "runningAppsCurrentWorkspace": true,
-          "runningAppsCurrentMonitor": true
         }
       ],
       "centerWidgets": [
         {
-          "id": "workspaceSwitcher",
-          "enabled": true
-        }
-      ],
-      "rightWidgets": [
-        {
-          "id": "musicLyrics",
-          "enabled": true
+          "id": "clock",
+          "enabled": true,
+          "clockCompactMode": true
         },
         {
-          "id": "systemTray",
+          "id": "workspaceSwitcher",
           "enabled": true
         },
         {
           "id": "weather",
           "enabled": true
+        }
+      ],
+      "rightWidgets": [
+        {
+          "id": "systemTray",
+          "enabled": true
         },
         {
-          "id": "clock",
+          "id": "systemUpdate",
+          "enabled": true
+        },
+        {
+          "id": "music",
           "enabled": true,
-          "clockCompactMode": true
+          "mediaSize": 0
         },
         {
           "id": "notificationButton",
@@ -776,6 +776,16 @@
         },
         {
           "id": "controlCenterButton",
+          "enabled": true,
+          "showNetworkIcon": true,
+          "showAudioPercent": true,
+          "showBrightnessIcon": false,
+          "showMicIcon": false,
+          "showMicPercent": false,
+          "showScreenSharingIcon": true
+        },
+        {
+          "id": "powerMenuButton",
           "enabled": true
         }
       ],
@@ -968,7 +978,7 @@
         },
         "ASUS VA229": {
           "x": 40,
-          "y": 880,
+          "y": 840,
           "width": 600,
           "height": 160
         },
@@ -1045,7 +1055,7 @@
         },
         "ASUS VA229": {
           "x": 1240,
-          "y": 760,
+          "y": 720,
           "width": 640,
           "height": 280
         },

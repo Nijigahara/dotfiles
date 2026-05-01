@@ -7,7 +7,8 @@
 [[ $- != *i* ]] && return
 
 export EDITOR="nvim"
-alias ls='ls --color=auto'
+#alias ls='ls --color=auto'
+alias ls='eza -l --color=always --icons=always --hyperlink --no-permissions --no-user --git-repos --git -h --no-filesize'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 export VOLTA_HOME="$HOME/.volta"
