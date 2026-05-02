@@ -2,7 +2,6 @@
 # ~/.bashrc
 #
 
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -18,4 +17,6 @@ fastfetch
 export SUDO_PROMPT=$'\a\e[1;31m[sudo]\e[0m password for %p: '
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
+. "$HOME/.local/bin/env"
 
+export PATH="$HOME/.local/bin:$PATH"
